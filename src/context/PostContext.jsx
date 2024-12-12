@@ -33,7 +33,7 @@ export const PostProvider = (props) => {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await axios.get("http://localhost:3030/posts");
+      const response = await axios.get("http://localhost:3000/cars");
       dispatch({ type: "initPosts", payload: response.data.result });
     };
     getData();

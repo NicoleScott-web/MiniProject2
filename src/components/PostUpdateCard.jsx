@@ -11,7 +11,7 @@ export default function PostUpdateCard({ id, title, body, setIsEdit }) {
   console.log("body", body);
   const formSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.put(`http://localhost:3030/posts/${id}`, {
+    const response = await axios.put(`http://localhost:3000/cars/${id}`, {
       title: formTitle,
       body: formBody,
     });

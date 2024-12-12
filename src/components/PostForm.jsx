@@ -10,7 +10,7 @@ export default function PostForm() {
     const { posts, postDispatch } = useContext(PostContext);
     const formSubmit = async (e) => {
         e.preventDefault();
-        const response = await axios.post("http://localhost:3030/posts", {
+        const response = await axios.post("http://localhost:3000/cars", {
           title,
           body,
         });
